@@ -1,1 +1,0 @@
-# oci-developer-professional-studies

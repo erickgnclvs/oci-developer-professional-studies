@@ -38,3 +38,28 @@
 | **Ease of Use** | Flexible and built to scale and areas of an app can be upgraded without disruption |    Require manual upgrades, causing distruption and shutdown to the application |
 | **Pricing** | Cheaper |   More expensive |
 | **Maintenance** | interruptions are limited because of the microservice architechture |   Interruptions can occur because of hardware migration or specialized software configurations |
+
+### Key Pillars of Cloud Native Development
+
+> **What is CNCF?**
+>   - CNCF is an open-source software foundation dedicated to making cloud-native computing universal and sustainable
+>   - Kubernetes, Fluentd, Envoy, Prometheus, CoreDNS, Helm, Hardbor, ContainerD, ETCD, Vitess
+ 
+#### Microservices
+- Enable you to design your application as a collection of loosely coupled services
+
+#### Containers
+- Containers are packages of software that contain all the necessary elements to run in any environments
+
+#### DevOps
+- Combination of development and operations brought together to crreate a unified infrastructure designed to maximize productivity
+
+#### CI/CD
+- A CI/CD pipeline automates your software delivery process. This helps developers merge and test code more frequently
+
+#### Service Mesh
+- A service mesh is a configurable, low-latency infrastructure layer that controls the interaction between a network of microservices
+
+### Benefits of Cloud Native Development
+
+

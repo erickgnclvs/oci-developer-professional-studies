@@ -208,3 +208,11 @@
 > **Continuous Deployment**
 >    - Manual (Continuous Delivery)
 >    - Automatic (Continuous Deployment)
+
+### OCI Code Editor: Overview
+- Integrated with Cloud Shell
+- Source Control with Git
+- Plugins for OCI Services
+- Workspace Management
+- Session Continuity
+- Personalization

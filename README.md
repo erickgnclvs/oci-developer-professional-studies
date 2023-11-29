@@ -2,7 +2,7 @@
 
 ### Links:
 
-- [MyLearn | Oracle University | Oracle Cloud Infrastructure Developer Professional](https://mylearn.oracle.com/ou/course/oracle-cloud-infrastructure-developer-professional/121971)
+- [MyLearn | Oracle University | Oracle Cloud Infrastructure Developer Professional](https://mylearn.oracle.com/ou/learning-path/become-an-oci-developer-professional-2023/121998)
 
 ### Modules:
 

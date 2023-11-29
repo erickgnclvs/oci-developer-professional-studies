@@ -103,18 +103,18 @@
 
 ### Design Methodology of Microservices
 > **12-Factor Methodology for Developing Microservices-based Applications**
->   - Codebase
->   - Dependencies
->   - Configuration
->   - Backing services
->   - Build, release and run
->   - Processes
->   - Port binding
->   - Concurrency
->   - Disposability
->   - Development and production parity
->   - Logs
->   - Admin processes
+>   - Codebase - 1 repo per service
+>   - Dependencies - use maven/gradle/npm
+>   - Configuration - externalise configuration and variables from code 
+>   - Backing services - build adaptable things like HQL (migrate with only configuration)
+>   - Build, release and run - use CI/CD tools, containers, separate build and run
+>   - Processes - use patterns like REST
+>   - Port binding - contracts between services
+>   - Concurrency - opt for horizontal scaling
+>   - Disposability - minimum or no downtime
+>   - Development and production parity - make dev and prod very similar
+>   - Logs - well logs are super important
+>   - Admin processes - define admin processes and separate from rest of app 
 
 ### Microservices Designs: Benefits
 - Easier to build and maintain apps
@@ -132,4 +132,79 @@
 - Present harder debugging problems
 - Present security threats
 
-  
+### DevOps: Overview
+> **Development and Operations had problems, so merge them**
+
+- DevOps Life Cycle and CI/CD 8 steps:
+  - Plan
+  - Code
+  - Build
+  - Test
+  - Release
+  - Deploy
+  - Operate
+  - Monitor
+ 
+- Agile development
+- Continuous Integration
+- Continuous Delivery
+ 
+### Benefits of DevOps:
+- Curated culture
+  - Connected teams
+  - Efficient workers
+  - Engaged employees
+  - Greater collaboration
+  - Growth opportuinites   
+- Tighter tech
+  - Improved quality
+  - More simplicity
+  - Quick problem resolution
+  - Greater stability
+  - Continuous delivery 
+- Better business
+  - Lower IT costs
+  - Quick delivery
+  - More predictability
+  - Increased flexibility
+  - Heightened innovation
+ 
+### OCI DevOps Service
+
+> **What is DevOps in the Cloud?**
+>    - Code and bug tracking
+>    - Automated unit testing and deployment
+>    - Reviewing and monitor
+
+
+> **Why use DevOps in the Cloud?**
+>    - Saves time and energy
+>    - Collapses into a single silo for collaboration
+>    - Automates the deployment process
+>    - Lower costs for development, testing, deployment and operations
+
+**CI/CD platform for developers to automate their Software Development Life Cycle (SDLC)**
+- Store code privately, access external code
+- Build, test, deploy software using pipelines
+- Complete CI/CD automation
+- Orchestrate your software development
+- Avoid down time during deployments
+- Automate the complexity of updating applications
+- Enhance security and reduce risk in delivery
+
+### DevOps as a Service: Benefits
+- Automation
+- Scalability
+- Integration and interoperability
+- Low risk
+- Low cost
+
+### OCI DevOps CI/CD
+> **Continuous Integration**
+>    - Frequent, small code changes
+>    - Error fixes continually integrated
+>    - Automatic build-and-test steps
+
+> **Continuous Deployment**
+>    - Manual (Continuous Delivery)
+>    - Automatic (Continuous Deployment)

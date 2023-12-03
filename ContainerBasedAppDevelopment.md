@@ -61,3 +61,58 @@
 - Regional availability
 - High availability
 - Anywhere access
+
+### Managing OCIR
+
+#### Managing Repository
+- Creating a repository
+- Deleting a repository
+- Moving repository between compartments
+  
+#### Managing Images
+- Viewing images and image details
+- Pushing/pulling images from Docker CLI
+  - `docker tag project01/helloworld:latest <region-key>.ocir.io/<tenancy-namespace>/<repo-name>:<tag>`
+  - `docker push <region-key>.ocir.io/<tenancy-namespace>/<repo-name>:<tag>`
+  - `docker pull <region-key>.ocir.io/<tenancy-namespace>/<repo-name>:<tag>`
+- Deleting and undeleting an image
+- Retaining and deleting images using retention policies
+  - Global retention policies
+  - Custom retention policies
+  >  retention: do I keep or really delete it after deleting it? default is: keep
+- Untagging images (removing image)
+- Pulling images from container registry during Kubernetes deployment
+  - Use `kubectl`to create a Docker registry secret
+  - Specify the image location in OCIR and the Docker secret in the deployment manifest file
+
+#### Managing Security
+- Policies to control repository access
+  - `Allow group dev-viewerrs to inspect repos in (tenancy || compartment dev-compartment)`
+  - `Allow group dev-pullers to read repos in (tenancy || compartment dev-compartment)`
+  - `Allow group dev-pushers to use repos in (tenancy || compartment dev-compartment)`
+  - `Allow group dev-managers to manage repos in (tenancy || compartment dev-compartment)`
+- Getting and auth token
+- Scanning images for vulnerabilities
+  - `Allow service vulnerability-scanning-service to read repos in (tenancy || compartment dev-compartment`
+  - `Allow service vulnerability-scanning-service to read comparments in (tenancy || compartment dev-compartment`
+
+#### Preparing for Container Registry 
+
+**Access to OCI tenancy**
+> The tenancy must be subscribed to one or more of the regions in which Container Registry is available
+
+⬇️
+
+**Docker on local machine**
+> Access to Docker CLI or Desktop to push and pull images on local machine
+
+⬇️
+
+**Create policy for resources**
+> User must belong to a group to which a policy grants the appropriate permission or belong to the tenancy's Administrators group
+
+⬇️
+
+**Generate auth token**
+> User must already have an OCI username and an auth token
+

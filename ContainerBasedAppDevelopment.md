@@ -116,3 +116,35 @@
 **Generate auth token**
 > User must already have an OCI username and an auth token
 
+### Open Container Initiative
+- Linux Foundation project to design open standards for containers
+- Established in June 2015 by Docker and other leaders in the container industry
+- To define industry standards around container image formats and runtimes
+
+**image-spec**
+- OCI image-spec defines how to create an OCI image, which includes:
+- Image manifest
+  - Provides configuration and set of layers for a single container image
+- File system serialization
+  - Talks about how to serialize file system
+- Image configuration
+  - Outlines the JSON format
+
+**runtime-spec**
+- OCI runtime-spec defines how to run the OCI image bundle as a container
+- The container runtime performs some or all of the following tasks:
+  - Container image management
+  - Container lifecycle management
+  - Container creation
+  - Container resource management
+
+#### OCI image layout
+- The OCI image layout is a slash separated layour of OCI content-addressable blobs and location-addressable references (**refs**)
+- Transport mechanisms:
+  - Archive formats (tar, zip)
+  - Shared filesystem environments (nfs)
+  - Networked file fetching (http, ftp, rsync)
+ 
+- oci-layout: { "imageLayoutVersion":"1.0.0" }
+- index.json: { "manifest":[{"digest":"sha256:098g0a9f7..."...}] }
+- blobs/sha256: 0a78d7as, 0987u00a, 09a7fdf0a...

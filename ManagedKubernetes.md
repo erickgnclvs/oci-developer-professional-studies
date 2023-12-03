@@ -1,1 +1,55 @@
+# Module 3: Managed Kubernetes
 
+### Challenges in containerization
+- Failures such as container crashes
+- Scheduling containers to specific machines depending on the configuration
+- Upgrading or rolling back the applications
+- Scaling up or down containers across a set of machines
+  
+### What is Kubernetes?
+- Kubernetes is an open source and portable platform
+- It is a container orchestration tool, which automates scaling of workloads
+- It groups containers into logical units
+
+> Master node -> worker nodes -> pods -> containers
+
+**Kubernetes can:**
+- Run containerized applications of any scale without any down time
+- Self-heal containerized applications
+- Greatly simplifies deployment operations
+
+>  **Docker** is used to manage and build the containers
+> 
+>  **Kubernetes** links containers running on multiple hosts and orchestrates them
+> 
+>  **Containers** communicate with each other via Kubernetes
+
+### Container Engine for Kubernetes - OKE: Overview
+
+**Core**
+> Fully managed, scalable and highly available service
+
+**Engine**
+> Uses the open-source system: Kubernetes
+
+**Creation**
+> Define and create OKE clusters using:
+> - Console
+> - REST API
+
+**Access**
+> Access clusters using:
+> - `kubectl`
+> - Kubernetes Dashboard
+> - Kubernetes API
+
+### OKE: When and Why
+**Use OKE when it's**
+- Too complex, costly and time consuming to build and maintain Kubernetes environments
+- Too hard to integrate Kubernetes with a registry and build process for container lifecycle management
+- Too dificult to manage and control team access to production clusters
+
+**Key benefits**
+- Enables developers to get started and deploy containers quickly
+- Gives DevOps teams visibility and control for Kubernetes management
+- Combines production grade container orchestration of open Kubernetes with control, security, IAM, and highly predictable perormance of Oracle's next generation cloud infrastructure

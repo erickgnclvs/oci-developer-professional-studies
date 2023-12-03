@@ -50,4 +50,14 @@
 - Runs as a fully managed service on OCI
 
 **What problem does it solve?**
-- Without a registry it is hard for development teams to maintain a consisten set of Docker images for 
+- Without a registry it is hard for development teams to maintain a consistent set of Docker images for their containerized applications
+- Without managed registry it is hard to enforce access rights and security policies for images
+- It is hard to find the right images and have them  available in the region of deployment
+- Container Registry is an Open Container initiative-compliant registry
+
+**Key benefits**
+- Integration
+- Security
+- Regional availability
+- High availability
+- Anywhere access

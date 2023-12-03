@@ -145,6 +145,6 @@
   - Shared filesystem environments (nfs)
   - Networked file fetching (http, ftp, rsync)
  
-- oci-layout: { "imageLayoutVersion":"1.0.0" }
-- index.json: { "manifest":[{"digest":"sha256:098g0a9f7..."...}] }
-- blobs/sha256: 0a78d7as, 0987u00a, 09a7fdf0a...
+- **oci-layout**: { "imageLayoutVersion":"1.0.0" }
+- **index.json**: { "manifest":[{"digest":"sha256:098g0a9f7..."...}] }
+- **blobs/sha256**: 0a78d7as, 0987u00a, 09a7fdf0a...

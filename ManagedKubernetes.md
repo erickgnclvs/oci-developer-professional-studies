@@ -53,3 +53,31 @@
 - Enables developers to get started and deploy containers quickly
 - Gives DevOps teams visibility and control for Kubernetes management
 - Combines production grade container orchestration of open Kubernetes with control, security, IAM, and highly predictable perormance of Oracle's next generation cloud infrastructure
+
+### Supported Shapes and Operating Systems
+#### Shapes
+- Flexible shapes
+- Bare metal shapes
+- Standard & GPU shapes
+- HPC shapes (except in RMA networks)
+- Dense I/O shapes
+- ~Bare metal HPC shapes with RDMA~
+- ~Micro VM shapes~
+- ṼM.Standard.ER.Flex~
+
+#### Operating Systems
+- Most Oracle Linux
+- Custom images (based on supported Oracle Linux)
+
+> Query supported shapes and images
+> 
+> `oci ce node-pool-options get --node-pool-option-id all`
+
+#### Supported Kubernetes Versions
+##### Operating systems
+- 3 versions supported at all times for new clusters
+- WHen new versions are added, the oldest is supported for **at least 30 days**
+
+### Version Drift in Control Plane Nodes and Worker Nodes
+- Kubernetes version on worker nodes can be as recent as that on the control plane
+- Versions on the worker nodes can lag behind the control plane by up to two minor versions

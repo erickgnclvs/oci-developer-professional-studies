@@ -86,9 +86,42 @@
 - Policies
 - Tools: kubectl and KubeConfig
 
-#### Network Resource Configuration for Clster Creation and Deployment
-
+### Network Resource Configuration for Clster Creation and Deployment
 
 ### Version Drift in Control Plane Nodes and Worker Nodes
 - Kubernetes version on worker nodes can be as recent as that on the control plane
 - Versions on the worker nodes can lag behind the control plane by up to two minor versions
+
+### Creating OKE Cluster on OCI
+
+#### Quick Create Workflow
+- Use defaults where possible
+- Network resources are created automatically
+- Options include:
+  - Kubernetes version
+  - API endpoint visibility
+  - Node shape, number
+  - Image verification
+
+#### Custom Create Workflow
+- There are more options to customize
+- Use existing networking resources
+- Create a cluster with no node pools or add node pools later
+- Options include:
+  - Secrets encryption
+  - Pod security policies
+  - NSGs for security
+  - Custom CIDR blocks for pods and services
+  - Node placement
+  
+#### API Driven/Automation
+- Maximum customization
+- Leverage APIs/SDKs/Terraform
+- Options include:
+  - Custom images for worker nodes
+
+### The Art of Designing Your Cluster
+- Node types
+- Workload characteristics
+- Operational considerations 
+- Cost optimization and scaling

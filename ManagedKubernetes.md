@@ -78,6 +78,17 @@
 - 3 versions supported at all times for new clusters
 - WHen new versions are added, the oldest is supported for **at least 30 days**
 
+### Prerequesite to Create an OKE Cluster
+- Access to an OCI tenancy
+- Sufficient quota on resource - service limits
+- Ready-to-deploy compatment
+- Configuring network resources
+- Policies
+- Tools: kubectl and KubeConfig
+
+#### Network Resource Configuration for Clster Creation and Deployment
+
+
 ### Version Drift in Control Plane Nodes and Worker Nodes
 - Kubernetes version on worker nodes can be as recent as that on the control plane
 - Versions on the worker nodes can lag behind the control plane by up to two minor versions
